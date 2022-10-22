@@ -6,23 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/ityped@1.0.3/dist/index.min.js"></script>
     <title>Climathon | 2022</title>
 </head>
 
 <body>
-    <navbar class="flex">
-        <button></button>
-        <button></button>
-        <button></button>
-    </navbar>
     <div class="container">
+        <section class="blocks flex" id="topic-block" style="--length : 100vh">
+            <p id="topic"></p>
+        </section>
+        <section class="blocks flex" style="align-items: center;">
+            <div class="cloudcontainer flex" direction="right" data-aos="fade-up-right" data-aos-duration="500">
+                <img src="../resources/cloud.svg" alt="">
+            </div>
+        </section>
+        <section class="blocks flex" style="align-items: center;">
+            <div class="cloudcontainer flex" direction="left" data-aos="fade-up-left" data-aos-duration="500">
+                <img src="../resources/cloud.svg" alt="">
+            </div>
+        </section>
         <section class="blocks"></section>
+        <section class="blocks">
+            <div class="buildingcontainer flex">
+                <img class="buildings" src="../resources/buildings.svg" alt="">
+            </div>
+
+        </section>
         <section class="blocks"></section>
-        <section class="blocks"></section>
-        <section class="blocks"></section>
+        <section class="blocks">
+
+        </section>
         <section class="blocks"></section>
     </div>
-
 </body>
 
 </html>

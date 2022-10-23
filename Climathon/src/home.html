@@ -9,59 +9,123 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/ityped@1.0.3/dist/index.min.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
     <title>Climathon | 2022</title>
 </head>
 
 <body>
     <div class="container">
+        <img src="../resources/logo.png" alt=""
+            style="position:absolute;scale:0.3;left:-15rem;margin-top:-3rem;border-radius: 3vh;box-shadow:  2rem 1.8rem 2rem 1rem rgb(3, 0, 0,0.2);padding: 0.5rem;">
         <section class="blocks flex" id="topic-block" style="--length : 100vh">
             <p id="topic"></p>
         </section>
-        <section class="blocks flex" style="align-items: center;justify-content: left;margin-left: min(10vw,10rem);">
-            <div class="cloudcontainer flex" direction="right" data-aos="fade-up-right" data-aos-duration="600">
-                <img src="../resources/cloud.svg" alt="">
-            </div>
+
+        <section class="blocks" id="chart-block">
+            <canvas id="myChart" data-aos="fade-up" data-aos-duration="500" data-aos-easing="linear" width="0"
+                height="0">
+            </canvas>
         </section>
-        <section class="blocks flex" style="align-items: center;justify-content: right;margin-left: min(-10vw,-10rem);">
-            <div class="cloudcontainer flex" direction="left" data-aos="fade-up-left" data-aos-duration="600">
-                <img src="../resources/cloud.svg" alt="">
+        <section class="blocks">
+            <div class="flex" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-duration="900"
+                style="justify-content:center;align-items:center;width: 100%;height: 100%;">
+                <p
+                    style="color:rgb(206, 235, 255);font-size: 2rem;margin-inline: 8rem;text-align: center;line-height: 3rem;border-radius: 5vh; box-shadow: 0 0 2rem 1rem rgb(3, 0, 0,0.2);font-family: 'Montserrat',sans-serif;font-weight: 800;width:60vw ;padding: 3rem  ;background-color: rgba(115, 157, 221, 0.3);">
+                    The World's made up of Carbon, then why are certain emissions considered so harmful?
+                    <br></br>
+                    Well, they are the bad guys, which we generate.
+                    <br></br>
+                    Wanna help the environment- We have a solution!
+                    <br></br>
+                    Say hello to the 5R Police!
+                </p>
+            </div>
+
+        </section>
+        <section class="blocks">
+            <div class="text-blob flex" data-aos="fade-up-right" data-aos-easing="ease-in-sine" data-aos-duration="600"
+                style="margin-top: 5rem;justify-content: right;margin-left: 5rem;">
+                <p
+                    style="position: absolute; top:inherit;transform: translateX(-30rem);padding-bottom: 35rem ;font-size: 4rem; color : rgb(206, 235, 255);">
+                    Refuse</p>
+
+                <p style="padding-bottom: 5rem;color : rgb(206, 235, 255);text-align: left;">
+                    This is the overarching first step of the 5R principle, which can help each individual eliminate a
+                    major proportion of their waste.
+                    <br></br>
+                    To Refuse - ask yourself “Why am I buying this?” or “Why am I engaging in this activity?”, and if
+                    you do not have a need for the item, do not purchase it. You are having a party, and you go to the
+                    store to buy a few disposable plates, and see plastic ones. You instinctively go there. But you stop
+                    yourself, you find that you don’t really need it. Why? Because there’s paper plates right beside.
+                    You choose those.
+                    <br></br>
+                    It is also the step that involves actively changing your habits and avoiding impulses to get
+                    everything you like. This is a social problem, and it requires a change in perceptions and
+                    awareness. Each step you take and encourage others to take will help push this change forward.
+                </p>
             </div>
         </section>
         <section class="blocks">
-            <svg width="50rem" height="50rem"></svg>
-        </section>
-        <section class="blocks">
-            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="2000" style="margin-left: 10rem;opacity: 0.4;">
-                <img class="buildings" id="building1" src="../resources/buildings.svg" alt="">
-            </div>
-            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1800" style="margin-left: 10rem;opacity: 0.4;">
-                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1600" style="margin-left: 6rem;opacity: 0.6;">
-                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
-            </div>
-            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1400" style="margin-left: 6rem;opacity: 0.6;">
-                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000" style="margin-left: 4rem;opacity: 0.8;">
-                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
-            </div>
-            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000" style="margin-left: 4rem;opacity: 0.8;">
-                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
+            <div class="text-blob flex" data-aos="fade-up-left" data-aos-easing="ease-in-sine" data-aos-duration="600"
+                style="margin-top: 5rem;justify-content: left;margin-left: 43rem;">
+                <p
+                    style="position: absolute; top:inherit;transform: translateX(26rem);padding-bottom: 35rem ;font-size: 4rem; color : rgb(206, 235, 255);;">
+                    Reduce</p>
+
+                <p style="padding-bottom: 5rem;color : rgb(206, 235, 255);text-align: right;">
+                    The next step is to Reduce. You’ve asked yourself whether you need something and you think you do.
+                    The next step is to ask if you need exactly that item.
+                    <br></br>
+                    Right, you are picking paper plates for a party, do you need the 200 piece-pack for your 25 person
+                    party? No? Well, then go for the 50 piece pack.
+                    <br></br>
+                    We indulge ourselves with excess, we feel that we will probably use something and so we buy a lot of
+                    it. Instead, limit yourself.
+                    <br></br>
+                    Get what you need. As long as there isn’t another pandemic, you should be able to go to the store
+                    again in a couple of days.
+                </p>
             </div>
         </section>
         <section class="blocks">
-            <div class="buildingcontainer flex" style="margin-left: 4rem;opacity: 0.9;">
-                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
-            </div>  
-            <div class="buildingcontainer flex" style="margin-left: 4rem;opacity: 0.9;">
-                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
-            </div>  
+
+            <div class="text-blob flex" data-aos="fade-up-right" data-aos-easing="ease-in-sine" data-aos-duration="600"
+                style="margin-top: 5rem;justify-content: right;margin-left: 5rem;">
+                <p
+                    style="position: absolute; top:inherit;transform: translateX(-30rem);padding-bottom: 35rem ;font-size: 4rem; color : rgb(206, 235, 255);">
+                    Reuse</p>
+
+                <p style="padding-bottom: 10rem;color : rgb(206, 235, 255);text-align: left;">
+                    This is one of the more popular Rs! Reusing something is an efficient way to keep something away
+                    from the landfill and get good value for money too!
+                    <br></br>
+                    Right then, you see reusable paper plates! Excellent, now you can be the best host for any
+                    parties in the future as well. Your party is totally going to be a success!
+                    <br></br>
+                    This one is on the easier side, none of us like to throw away perfectly usable things, and this
+                    draws right from that. Let’s maximize the use of our resources!
+
+                </p>
+            </div>
+
+        </section>
+        <section class="blocks">
+            <div class="text-blob flex" data-aos="fade-up-left" data-aos-easing="ease-in-sine" data-aos-duration="600"
+                style="margin-top: 5rem;justify-content: left;margin-left: 43rem;">
+                <p
+                    style="position: absolute; top:inherit;transform: translateX(26rem);padding-bottom: 35rem ;font-size: 4rem; color : rgb(206, 235, 255);;">
+                    Recycle</p>
+
+                <p
+                    style="padding-bottom: 5rem;color : rgb(206, 235, 255);text-align: right;margin-left: 10rem;font-size: 2.7rem;">
+                    Carbon can Shapeshift!
+                    <br></br>
+                    It can put up a facade when you recycle it to unleash your creativity
+                    <br></br>
+                    Or you could repurpose it like respawning characters of a video game!
+                </p>
+            </div>
         </section>
     </div>
 </body>

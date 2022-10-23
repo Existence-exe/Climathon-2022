@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
+
 
 
 * {
@@ -97,19 +99,36 @@ button:hover::before {
 #topic-block {
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    font-size: 6rem;
+    color: rgba(206, 235, 255,0.8);
 }
 
 .buildingcontainer {
-    margin-left: 0rem;
-    margin-top:0;
-    align-items: center;
-    justify-content: right;
-    width: 100%;
-    overflow-y:hidden;
+    display: none;
 }
 
 .buildings {
     overflow-y:hidden;
     scale : 1    ; 
+}
+
+canvas { 
+    scale: 0.7;
+}
+
+#chart-block { 
+    margin-bottom: 0rem;
+}
+
+.text-blob {
+    
+    align-items:flex-end; 
+    width: max(70rem,60%);
+    height: max(50rem,50%);
+    background-color: rgba(115, 157, 221, 0.3);
+    
+    font-size: 1.8rem;
+    padding: 4rem;
+    border-radius: 10vh;
+    box-shadow: 0 0 1rem 1rem rgb(3, 0, 0,0.2);
 }

@@ -10,7 +10,7 @@ ityped.init('#topic', {
     cursorChar: ""
 });
 
-function BarChart(data, {
+/*function BarChart(data, {
     x = (d, i) => i, // given d in data, returns the (ordinal) x-value
     y = d => d, // given d in data, returns the (quantitative) y-value
     title, // given d in data, returns the title text
@@ -95,4 +95,4 @@ function BarChart(data, {
         .attr("transform", `translate(0,${height - marginBottom})`)
         .call(xAxis);
 
-}
+}*/

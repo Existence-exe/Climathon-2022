@@ -81,17 +81,15 @@ button:hover::before {
 .blocks {
     height: var(--length, 100vh);
     width: 100vw;
-    border-block: solid 1px white;
+    overflow-y:hidden;
+    overflow-x: hidden;
 }
 
 .cloudcontainer [direction='left']{
-    justify-content: flex-start ;
-    margin-left:10rem ;
     width: 100%;
 }
 
 .cloudcontainer [direction='right']{
-    justify-content: flex-end ;
     margin-right:10rem ;
     width: 100%;
 }
@@ -103,10 +101,15 @@ button:hover::before {
 }
 
 .buildingcontainer {
-    flex-direction: column;
+    margin-left: 0rem;
+    margin-top:0;
     align-items: center;
+    justify-content: right;
+    width: 100%;
+    overflow-y:hidden;
 }
 
 .buildings {
-    scale : 0.5 ; 
+    overflow-y:hidden;
+    scale : 1    ; 
 }

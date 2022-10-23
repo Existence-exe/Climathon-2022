@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/ityped@1.0.3/dist/index.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <title>Climathon | 2022</title>
 </head>
 
@@ -17,28 +18,51 @@
         <section class="blocks flex" id="topic-block" style="--length : 100vh">
             <p id="topic"></p>
         </section>
-        <section class="blocks flex" style="align-items: center;">
-            <div class="cloudcontainer flex" direction="right" data-aos="fade-up-right" data-aos-duration="500">
+        <section class="blocks flex" style="align-items: center;justify-content: left;margin-left: min(10vw,10rem);">
+            <div class="cloudcontainer flex" direction="right" data-aos="fade-up-right" data-aos-duration="600">
                 <img src="../resources/cloud.svg" alt="">
             </div>
         </section>
-        <section class="blocks flex" style="align-items: center;">
-            <div class="cloudcontainer flex" direction="left" data-aos="fade-up-left" data-aos-duration="500">
+        <section class="blocks flex" style="align-items: center;justify-content: right;margin-left: min(-10vw,-10rem);">
+            <div class="cloudcontainer flex" direction="left" data-aos="fade-up-left" data-aos-duration="600">
                 <img src="../resources/cloud.svg" alt="">
             </div>
         </section>
-        <section class="blocks"></section>
         <section class="blocks">
-            <div class="buildingcontainer flex">
-                <img class="buildings" src="../resources/buildings.svg" alt="">
+            <svg width="50rem" height="50rem"></svg>
+        </section>
+        <section class="blocks">
+            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="2000" style="margin-left: 10rem;opacity: 0.4;">
+                <img class="buildings" id="building1" src="../resources/buildings.svg" alt="">
             </div>
-
+            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1800" style="margin-left: 10rem;opacity: 0.4;">
+                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
+            </div>
         </section>
-        <section class="blocks"></section>
         <section class="blocks">
-
+            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1600" style="margin-left: 6rem;opacity: 0.6;">
+                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
+            </div>
+            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1400" style="margin-left: 6rem;opacity: 0.6;">
+                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
+            </div>
         </section>
-        <section class="blocks"></section>
+        <section class="blocks">
+            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000" style="margin-left: 4rem;opacity: 0.8;">
+                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
+            </div>
+            <div class="buildingcontainer flex" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000" style="margin-left: 4rem;opacity: 0.8;">
+                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
+            </div>
+        </section>
+        <section class="blocks">
+            <div class="buildingcontainer flex" style="margin-left: 4rem;opacity: 0.9;">
+                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
+            </div>  
+            <div class="buildingcontainer flex" style="margin-left: 4rem;opacity: 0.9;">
+                <img class="buildings" id="building2" src="../resources/buildings.svg" alt="">
+            </div>  
+        </section>
     </div>
 </body>
 

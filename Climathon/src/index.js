@@ -1,6 +1,5 @@
 AOS.init();
 
-import {BarChart} from "@d3/bar-chart"
 ityped.init('#topic', {
     strings: ['Climathon 2022', 'Project by Team', 'Alohomora'],
     startDelay: 500,
